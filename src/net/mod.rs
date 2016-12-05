@@ -3,7 +3,8 @@
 //! This module contains the TCP/UDP networking types, similar to the standard
 //! library, which can be used to implement networking protocols.
 
-mod tcp;
+#[allow(missing_docs)]
+pub mod tcp;
 mod udp;
 
 pub use self::tcp::{TcpStream, TcpStreamNew};
